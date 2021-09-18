@@ -9,7 +9,7 @@ app.use(express.text())
 
 app.get('/', (req, res) => {
     // res.send('/index.html')
-    res.sendfile('web' + '/index.html')
+    res.sendfile('docs' + '/index.html')
 })
 
 
@@ -79,7 +79,7 @@ app.get('/xx', (req, res) => {
 
 })
 
-app.use(express.static(__dirname + '/web'));
+app.use(express.static(__dirname + '/docs'));
 
 app.listen(3333, () => console.log('API started'));
 // nodemon ./server.js localhost 3333
