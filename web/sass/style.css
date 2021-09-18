@@ -1,0 +1,255 @@
+body::-webkit-scrollbar {
+  width: 10em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+#mapid {
+  height: 80vh;
+  width: 100%;
+  cursor: default;
+}
+#mapid:active {
+  cursor: grabbing;
+}
+
+.container_map {
+  position: relative;
+}
+.container_map .task {
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  z-index: 1000;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+}
+.container_map .task #new_task {
+  text-transform: uppercase;
+  color: #6C8AFFFF;
+  font-size: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  line-height: 40px;
+}
+.container_map .task > div:hover #new_task {
+  text-decoration: underline;
+}
+.container_map .task ul {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+  max-height: 592px;
+  overflow-y: scroll;
+}
+.container_map .task ul::-webkit-scrollbar {
+  width: 0;
+}
+.container_map .task ul li {
+  list-style-type: none;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.container_map .task ul li span.color_square {
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  top: 14px;
+  right: 20px;
+}
+.container_map .task ul li span {
+  color: gray;
+  font-size: 14px;
+  font-family: "Times New Roman";
+}
+.container_map .task ul li p {
+  font-size: 15px;
+  margin: 10px 0;
+}
+.container_map .task ul li div {
+  margin-top: 15px;
+}
+.container_map .task ul li div button:last-child {
+  color: #4C71FEFF;
+  background: none;
+}
+.container_map .task ul li div button {
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  background: #4C71FEFF;
+  border: none;
+  border-radius: 3px;
+  line-height: 20px;
+  font-family: "Roboto Light", sans-serif;
+  cursor: pointer;
+}
+.container_map .task ul li div button:hover {
+  text-decoration: underline;
+}
+
+.rectangle-white {
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px gray;
+}
+
+.context-menu {
+  font-size: 16px;
+  cursor: pointer;
+}
+.context-menu:hover {
+  text-decoration: underline;
+}
+
+.dashboard {
+  display: none;
+  flex-direction: column;
+  background: white;
+  position: absolute;
+  right: -400px;
+  top: 0;
+  bottom: 0;
+  max-width: 380px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.dashboard_inner {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px gray solid;
+  padding: 15px;
+}
+.dashboard_inner .title_task_span {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 10px;
+  font-family: "Times New Roman";
+}
+
+.new_task {
+  background: #F1F1F1FF;
+}
+.new_task p {
+  font-size: 16px;
+}
+.new_task p span {
+  font-weight: bold;
+}
+.new_task .address {
+  font-size: 12px;
+}
+.new_task button {
+  width: 90px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 10px;
+  background: #4C71FEFF;
+  border: none;
+  border-radius: 3px;
+  line-height: 20px;
+  margin-top: 20px;
+  font-family: "Roboto Light", sans-serif;
+  cursor: pointer;
+}
+.new_task button:hover {
+  text-decoration: underline;
+}
+.new_task button:active {
+  transform: scale(0.9);
+}
+
+.location .loc {
+  margin-top: 10px;
+  font-family: "Times New Roman";
+}
+
+.service_type ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+.service_type ul input {
+  display: none;
+}
+.service_type ul label {
+  cursor: pointer;
+}
+.service_type ul li {
+  margin-right: 12px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+.service_type ul li div {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  overflow: hidden;
+  border: 1px transparent solid;
+}
+.service_type ul li:last-child {
+  margin-right: 0;
+}
+.service_type ul li img {
+  height: 30px;
+  width: 30px;
+  margin-top: 8px;
+}
+.service_type ul li span {
+  display: block;
+}
+.service_type ul input:checked + label div {
+  border: 1px #4C71FEFF solid;
+  border-radius: 50%;
+}
+
+.task_of_type ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 10px 0 0;
+}
+.task_of_type input {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+.task_of_type label {
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  margin: 0 10px 10px 0;
+  border: 1px transparent solid;
+  border-radius: 10px;
+  padding: 2px 4px;
+}
+.task_of_type input:checked + label {
+  border: 1px #4C71FEFF solid;
+  border-radius: 10px;
+  padding: 2px 4px;
+}
+
+.task_description input {
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

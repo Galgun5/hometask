@@ -1,0 +1,78 @@
+{
+  "markers": {
+    "marker_#1": {
+      "lat": 48.39762752666151,
+      "lng": 35.02776145935059,
+      "number_of_marker": 1,
+      "color_marker": "#15159e"
+    },
+    "marker_#2": {
+      "lat": 48.395505818394405,
+      "lng": 35.02385616302491,
+      "number_of_marker": 2,
+      "color_marker": "#000064"
+    },
+    "marker_#3": {
+      "lat": 48.397797590978826,
+      "lng": 35.025207996368415,
+      "number_of_marker": 3,
+      "color_marker": "#f8382a"
+    },
+    "marker_#4": {
+      "lat": 48.39614715309811,
+      "lng": 35.026710033416755,
+      "number_of_marker": 4,
+      "color_marker": "#27963d"
+    }
+  },
+  "dataOfDashbord": {
+    "number_#1": {
+      "address": "My address is Паникахи улица, Шевченковский район, Дніпровська міська громада, Днепр, Дніпровський район, Днепропетровская область, ​52071, Украина",
+      "service_type": "gardener",
+      "color": "#15159e",
+      "task_of_type": "select5",
+      "description": "443",
+      "date": "2021-09-18T19:32",
+      "dateStr": "Saturday, Sep 18, 19:32",
+      "INeed": "I need a gardener to cut curly forms of shrubs ",
+      "task_of_service": "cut curly forms of shrubs ,",
+      "numberMarker": 1
+    },
+    "number_#2": {
+      "address": "My address is Тополиная улица, Житловий масив \"Тополя-2\", Шевченковский район, Дніпровська міська громада, Днепр, Дніпровський район, Днепропетровская область, ​52071, Украина",
+      "service_type": "housekeeper",
+      "color": "#000064",
+      "task_of_type": "select5",
+      "description": "kl;lk",
+      "date": "2021-09-18T17:38",
+      "dateStr": "Saturday, Sep 18, 17:38",
+      "INeed": "I need a housekeeper to childcare",
+      "task_of_service": "childcare,",
+      "numberMarker": 2
+    },
+    "number_#3": {
+      "address": "My address is Тополиная улица, Житловий масив \"Тополя-2\", Шевченковский район, Дніпровська міська громада, Днепр, Дніпровський район, Днепропетровская область, ​52071, Украина",
+      "service_type": "plumber",
+      "color": "#f8382a",
+      "task_of_type": "select2",
+      "description": ";",
+      "date": "2021-09-18T18:51",
+      "dateStr": "Saturday, Sep 18, 18:51",
+      "INeed": "I need a plumber to unblock a sink",
+      "task_of_service": "unblock a sink,",
+      "numberMarker": "3"
+    },
+    "number_#4": {
+      "address": "My address is Паникахи улица, Шевченковский район, Дніпровська міська громада, Днепр, Дніпровський район, Днепропетровская область, ​52071, Украина",
+      "service_type": "plumber",
+      "color": "#27963d",
+      "task_of_type": "select2",
+      "description": "'l",
+      "date": "2021-09-18T18:55",
+      "dateStr": "Saturday, Sep 18, 18:55",
+      "INeed": "I need a plumber to unblock a sink",
+      "task_of_service": "unblock a sink,",
+      "numberMarker": 4
+    }
+  }
+}
