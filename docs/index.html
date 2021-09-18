@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+          minimum-scale=1.0>
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+    <!-- скрипт карты -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+    <!-- наши стили -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <link rel="stylesheet" href="sass/style.css"/>
+
+    <script src="img\svg-icon.js"></script>
+
+
+
+
+</head>
+
+<body>
+<!-- контейнер для карты -->
+
+<div class="container_map">
+    <div id="mapid"></div>
+    <div class="task">
+        <div class="rectangle-white">
+            <button class="" id="new_task">+ new task</button>
+        </div>
+        <ul id="created-task">
+        </ul>
+    </div>
+
+
+    <div class="dashboard">
+
+        <div class="new_task dashboard_inner">
+            <span class="title_task_span">new task</span>
+            <p id="fulltask">I need <span id="needed_service"></span> to <span id="task_of_service"></span>
+            <span id="descr_span"></span></p>
+            <span class="address">My address is</span>
+            <button id="create_task">create task</button>
+        </div>
+        <form action="">
+            <div class="location dashboard_inner">
+                <span class="title_task_span">location</span>
+                <span class="loc"></span>
+                <p>Choose color of marker <input id="change_color_marker" type="color" value="#000064"></p>
+            </div>
+            <div class="service_type dashboard_inner">
+                <span class="title_task_span">service type</span>
+                <ul>
+                    <li>
+                        <input id="elect" value="electrician" type="radio" name="service_type">
+                        <label for="elect">
+                            <div>
+                                <img src="img\noun_321339_cc.svg" alt="">
+                            </div>
+                            <span>Electrician</span>
+                        </label>
+                    </li>
+                    <li>
+                        <input id="plum" value="plumber" type="radio" name="service_type">
+                        <label for="plum">
+                            <div>
+                                <img src="img\noun_321315_cc.svg" alt="">
+                            </div>
+                            <span>Plumber</span>
+                        </label>
+                    </li>
+                    <li>
+                        <input id="gard" value="gardener" type="radio" name="service_type">
+                        <label for="gard">
+                            <div>
+                                <img src="img\noun_321363_cc.svg" alt="">
+                            </div>
+                            <span>Gardener</span>
+                        </label>
+                    </li>
+                    <li>
+                        <input id="house" value="housekeeper" type="radio" name="service_type">
+                        <label for="house">
+                            <div>
+                                <img src="img\noun_321399_cc.svg" alt="">
+                            </div>
+                            <span>Housekeeper</span>
+                        </label>
+                    </li>
+                    <li>
+                        <input id="cook" value="cook" type="radio" name="service_type">
+                        <label for="cook">
+                            <div>
+                                <img src="img\noun_321395_cc.svg" alt="">
+                            </div>
+                            <span>Cook</span>
+                        </label>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="task_of_type dashboard_inner">
+                <span class="title_task_span"></span>
+                <ul>
+
+                </ul>
+            </div>
+
+           <div class="task_description dashboard_inner">
+                <span class="title_task_span">task description</span>
+                <input type="text">
+            </div>
+            <div class="task_description dashboard_inner">
+                <span class="title_task_span">Date</span>
+                <input id='date' type="datetime-local">
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- наш скрипт-модуль -->
+<script src="./index.js" type=""></script>
+
+</body>
+
+
+</html>
+
+
