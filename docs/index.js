@@ -294,7 +294,7 @@ function setServiceType(typeService, id = null) {
         }).appendTo(li);
 
         jQuery('<label/>', {
-            htmlFor: `select${index + 1}`,
+            for: `select${index + 1}`,
             text: item
 
         }).appendTo(li);
